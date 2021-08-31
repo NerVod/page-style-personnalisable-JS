@@ -1,23 +1,27 @@
 function selectMode(mode) {
 
-    let color = "ghostWhite";
+    let color = "url(images/kashyyk.png) no-repeat 50% 50%";
     let image = "images/Yoda.png";
     let label = "Light Mode";
+    let titre = "rgb(94, 94, 94)";
 
     if (mode === "dark") {
-        color = "darkSlateBlue";
+        color = "url(images/Mustafar.jpg) no-repeat 50% 50%";
         image = "images/sith.png";
         label = "Dark Mode";
+        titre = "rgb(188, 42, 34)"
 
     } else if (mode === "light") {
-        color = "ghostWhite";
+        color = "url(images/kashyyk.png) no-repeat 50% 50%";
         image = "images/Yoda.png";
         label = "Light Mode";
+        titre = "rgb(199, 197, 61)";
 
     } else {
-        color = "dimGray";
+        color = "url(images/senateDistrict.png) no-repeat 50% 50%";
         image = "images/solo.png";
         label = "Balanced Mode";
+        titre = "rgb(56, 54, 54)";
     }
 
     console.log(label);
@@ -25,8 +29,10 @@ function selectMode(mode) {
 
     document.getElementById("icon").src = image;
     document.getElementById("theme").style
-        .backgroundColor = color;
+        .background = color;
     document.getElementById("label").innerHTML =
         label;
+    document.getElementById("label").style
+        .color = titre;
 
 }
