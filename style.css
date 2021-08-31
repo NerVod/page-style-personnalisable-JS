@@ -39,8 +39,8 @@ dark {
   background-color: darkGray;
 }
 
-#bottom {
-  background: url(images/wallpaper.jpg) no-repeat fixed 50% 50%;
+.imageBas {
+  background: url(images/wallpaper.jpg) no-repeat 50% 50%;
   background-size: cover;
-  height: 600px;
+  height: 60vh;
 }
